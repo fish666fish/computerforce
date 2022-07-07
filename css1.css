@@ -1,0 +1,84 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 10% 5% 80% 5%;
+	gap: 0px 0px;
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-areas:
+		"Header Header"
+		"Menu Menu"
+		"Main Aside"
+		"Footer Footer";
+	background-color: darkgray;
+}
+
+.Header {
+	grid-area: Header;
+	background-color: darkslategray;
+	color: white;
+}
+
+.Header>img {
+	grid-area: Header;
+	max-width: 100%;
+	max-height: 70%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Menu {
+	display: flex;
+	grid-area: Menu;
+	font-style: italic;
+	font-weight: bold;
+	background-color: rgb(255, 246, 168);
+
+
+}
+
+.Menu a {
+	vertical-align: middle;
+	padding: 0.5rem 0.75rem;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.search_box {
+	width: 100%;
+	text-align: end;
+	justify-self: end;
+	align-self: center;
+	padding: 0 10px;
+}
+
+.Footer{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.Main {
+	grid-area: Main;
+	height: auto;
+	overflow: scroll
+}
+
+.Footer {
+	grid-area: Footer;
+	background-color: darkslategray;
+	vertical-align: bottom;
+	text-align: center;
+	color: white;
+}
+
+.Aside {
+	grid-area: Aside;
+
+}
